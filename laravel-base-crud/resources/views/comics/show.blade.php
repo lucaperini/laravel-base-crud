@@ -5,9 +5,9 @@
 @section('main-content')
 
     <main>
-        <div class="card text-center">
+        <div class="card p-5 mx-auto text-center w-50 h-50">
             <h5 class="card-header">{{ $comic->title }}</h5>
-            <img src="{{$comic->thumb}}" class="card-img-top p-5" alt="...">
+            <img src="{{$comic->thumb}}" class="card-img-small p-5" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Descrizione</h5>
                 <p class="card-text">{{ $comic->description }}</p>

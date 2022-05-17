@@ -8,6 +8,9 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="p-5 text-center">Crud Comics</h1>
+                    <div class="text-center mb-3">
+                        <a href="{{route('comics.create')}}" class="btn btn-success">+ Add Comic</a>
+                    </div>
                     @foreach ($comics as $comic)
                         <div class="card align-top p-3 m-2" style="width: 18rem; display:inline-block">
                             <img src="{{$comic->thumb}}" class="card-img-top" alt="...">
