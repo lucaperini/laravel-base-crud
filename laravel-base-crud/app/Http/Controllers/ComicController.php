@@ -13,7 +13,7 @@ class ComicController extends Controller
      */
     public function index() {
 
-        $newComics = Comic::orderBy('sale_date', 'desc')->paginate(20);
+        $newComics = Comic::orderBy('id', 'desc')->paginate(12);
         return view('comics.index', ["comics"=>$newComics]);
     }
 
